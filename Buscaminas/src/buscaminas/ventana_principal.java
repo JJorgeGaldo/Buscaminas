@@ -34,6 +34,7 @@ public class ventana_principal extends javax.swing.JFrame implements ActionListe
             this.setBackground(java.awt.Color.RED);
             javax.swing.JOptionPane.showMessageDialog(this, "Pulsaste sobre una mina.. Perdiste");
             this.contador = 0;
+            iniciar();
         }else{
             temp2.setBackground(java.awt.Color.PINK);
             contador ++;
@@ -234,7 +235,7 @@ public class ventana_principal extends javax.swing.JFrame implements ActionListe
         n_fil = Integer.parseInt(this.in_row.getText());
         n_col = Integer.parseInt(this.in_col.getText());
         
-        this.panel_juego.setLayout(new java.awt.GridLayout(n_fil, n_col));
+        this.panel_juego.setLayout(new GridLayout(n_fil, n_col));
         
         
         this.num_cuadros = n_fil * n_col;
